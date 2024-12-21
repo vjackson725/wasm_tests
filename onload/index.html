@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Hello World</title>
+
+  <link data-trunk rel="copy-file" href="service_worker.js"/>
+  <link data-trunk rel="rust" data-type="main" />
+
+  <script>
+    window.addEventListener("load",
+      () => {
+        console.log("loaded (from JS)")
+      }
+    )
+  </script>
+</head>
+<body>
+</body>
+</html>
+
